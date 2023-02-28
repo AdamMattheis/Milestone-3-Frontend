@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router";
 
 function ItemDetails() {
 
-	const { _id } = useParams()
+	const { id } = useParams()
 
 	const navigate = useNavigate()
 
@@ -11,30 +11,30 @@ function ItemDetails() {
 
 	useEffect(() => {
 		const fetchData = async () => {
-			const response = await fetch(`http://localhost:3000/items/${_id}`)
+			const response = await fetch(`http://localhost:3000/items/${id}`)
 			const resData = await response.json()
 			setItem(resData)
 		}
 		fetchData()
-	}, [_id])
+	}, [id])
 
 	if (item === null) {
 		return <h1>Loading</h1>
 	}
 
 	function editItem() {
-		navigate(`/items/${item._id}/edit`)
+		navigate(`/items/${item.id}/edit`)
 	}
 
 	async function deleteItem() {
-		await fetch(`http://localhost:3000/items/${item._id}`, {
+		await fetch(`http://localhost:3000/items/${item.id}`, {
 			method: 'DELETE'
 		})
 		navigate('/items')
 	}
 
 	return (
-		<main className="moviesPage" key={item._id}>
+		<main className="moviesPage">
 			<div className="text-center" >
 				<div className="moviesPage">
                     <h1>

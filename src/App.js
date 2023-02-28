@@ -12,7 +12,7 @@ function App() {
           <Route path="/" element={<Items />} />
           <Route path="/items" element={<Items />} />
           <Route path="/items/new" element={<NewItemForm />} />
-          <Route path="/items/:_id" element={<ItemDetails />} />
+          <Route path="/items/:id" element={<ItemDetails />} />
         </Routes>
       </BrowserRouter>
   );

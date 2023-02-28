@@ -19,13 +19,13 @@ const Items = () => {
 
     let itemsFormatted = items.map((item) => {
 		return (
-			<div className='flex' key={item.item_id}>
+			<div className='flex' key={item._id}>
                 
 				<img src={item.picture} width="200" height="200"/>
 
 				<h2>
                     <div className='detailsButton'>
-                        <button className='detailsButton' onClick={() => navigate(`/items/${item.item_id}`)} > 
+                        <button className='detailsButton' onClick={() => navigate(`/items/${item._id}`)} > 
                             {item.name}
                         </button> 
                    </div>

@@ -23,11 +23,11 @@ function ItemDetails() {
 	}
 
 	function editItem() {
-		navigate(`/items/${item.id}/edit`)
+		navigate(`/items/${id}/edit`)
 	}
 
 	async function deleteItem() {
-		await fetch(`http://localhost:3000/items/${item.id}`, {
+		await fetch(`http://localhost:3000/items/${id}`, {
 			method: 'DELETE'
 		})
 		navigate('/items')
@@ -51,12 +51,10 @@ function ItemDetails() {
 					
 					<br />
 					<p>
-						Description:   {item.description}.
+						Description:   {item.description}
 					</p>
 					<br />
-                    <p>
-						Seller:   {item.user}.
-					</p>
+                        Seller:   {item.user}
 					<br />
 					<button className="NewMovieButton" onClick={editItem}>
 						Edit

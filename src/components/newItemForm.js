@@ -70,12 +70,12 @@ function NewItemForm() {
 					/>
 				</div>
 				<div className="moviesPage2">
-					<label htmlFor="user">User</label>
+					<label htmlFor="description">Description</label>
 					<input
-						value={item.user}
-						onChange={e => setItem({ ...item, user: e.target.value })}
+						value={item.description}
+						onChange={e => setItem({ ...item, description: e.target.value })}
 						className="form-control"
-						id="user" name="user" />
+						id="description" name="description" />
 				</div>
                 <div className="moviesPage2">
                     <input className="NewMovieButton" type="submit" value="Add Item" />

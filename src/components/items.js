@@ -32,10 +32,13 @@ const Items = () => {
 				</h2>
                 
 				<p className='text-center'>
-					Price {item.price}
+					Price: {item.price}
+				</p>
+                <p className='text-center'>
+				    Description: {item.description}
 				</p>
 				<p className='text-center'>
-				    Seller {item.user}
+				    Seller: {item.user}
 				</p>
 			</div>
 		)

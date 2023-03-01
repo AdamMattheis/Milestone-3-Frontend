@@ -42,7 +42,7 @@ function EditItemForm() {
 
 	return (
 		<main className="moviesPage" >
-			<h1>Edit Name</h1>
+			<h1>Edit Item</h1>
 			<form onSubmit={handleSubmit}>
 				<div className="moviesPage2">
 					<label htmlFor="name">Item Name</label>

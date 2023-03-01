@@ -57,15 +57,27 @@ const Items = () => {
         <hr />
         <div className='itemsPage'>
             <div>
-                <p>Items</p>
-            </div>
-            <div>
                 <a href='/items/new' >
                     <button className='NewMovieButton'>
                         New Item
                     </button>
                 </a>
             </div>
+            <div>
+                <a href='/user/login' >
+                    <button className='NewMovieButton'>
+                        Login
+                    </button>
+                </a>
+            </div> 
+            <div>
+                <a href='/user/signup' >
+                    <button className='NewMovieButton'>
+                        Sign Up
+                    </button>
+                </a>
+            </div>
+            
         </div>
         <div className='itemsPage'>
             {itemsFormatted}

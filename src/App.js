@@ -5,6 +5,7 @@ import Items from './components/items';
 import NewItemForm from './components/newItemForm';
 import ItemDetails from './components/itemDetails';
 import EditItemForm from './components/editItemForm';
+import NewUserForm from './components/signup';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/items/new" element={<NewItemForm />} />
           <Route path="/items/:id" element={<ItemDetails />} />
           <Route path="/items/:id/edit" element={<EditItemForm />} />
+          <Route path="/user/signup" element={<NewUserForm />} />
         </Routes>
       </BrowserRouter>
   );

@@ -19,7 +19,7 @@ const Items = () => {
 
     let itemsFormatted = items.map((item) => {
 		return (
-			<div className='flex' key={item._id}>
+			<div className='flex' key={item.id}>
                 
 				<img src={item.picture} width="200" height="200"/>
 
@@ -28,7 +28,7 @@ const Items = () => {
                         <button className='detailsButton' onClick={() => navigate(`/items/${item._id}`)} > 
                             {item.name}
                         </button> 
-                   </div>
+                    </div>
 				</h2>
                 
 				<p className='text-center'>
@@ -39,7 +39,13 @@ const Items = () => {
 				</p>
 				<p className='text-center'>
 				    Seller: {item.user}
+                    
 				</p>
+                <a href='/user/purchase' >
+                    <button className='NewMovieButton'>
+                        Purchase
+                    </button>
+                </a>
 			</div>
 		)
 	})
@@ -60,6 +66,13 @@ const Items = () => {
                 <a href='/items/new' >
                     <button className='NewMovieButton'>
                         New Item
+                    </button>
+                </a>
+            </div>
+            <div>
+                <a href='/user/account' >
+                    <button className='NewMovieButton'>
+                        Account
                     </button>
                 </a>
             </div>

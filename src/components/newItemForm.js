@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { useNavigate } from "react-router"
 
 function NewItemForm() {
@@ -11,6 +11,19 @@ function NewItemForm() {
 		picture: '',
 		user: ''
 	})
+
+	const [user, setUser] = useState([])
+
+	useEffect(()=> {
+        const fetchData = async () => {
+            const response = await fetch(`http://localhost:3000/user`)
+            const resData = await response.json()
+            setUser(resData)
+        }
+        fetchData()
+    }, [])
+
+
 
 	async function handleSubmit(e) {
 		e.preventDefault()
@@ -76,6 +89,21 @@ function NewItemForm() {
 						onChange={e => setItem({ ...item, description: e.target.value })}
 						className="form-control"
 						id="description" name="description" />
+				</div>
+                <div className="moviesPage2">
+					<label htmlFor="user">Seller</label>
+						<select 
+							onChange={e => setItem({ ...item, user: e.target.value})}>
+							{user.map((u) => {
+								return(
+									<option 
+									value={u._id}
+									key={u._id}>{u.username}
+									</option>
+									
+								)
+							})}
+						</select>
 				</div>
                 <div className="moviesPage2">
                     <input className="NewMovieButton" type="submit" value="Add Item" />

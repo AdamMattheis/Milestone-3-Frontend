@@ -34,7 +34,22 @@ Change all fetch routes in the src component folder to http://localhost/3000
  • Deployment- Heroku
 
 ## Future updates
+<hr />
+
+* User name display
+* Paypal authentication. 
+ - Feature is operational but due to time constraints it was not implemented into deployed site. 
+* Google LogIn
+* Ranking (most popular items on the 1st page) and Rating system. 
+* VOC
+ - Comment section / Review board 
+* Video support 
+ - For seller to advertise product 
+ - For buyers to post reviews 
+
 ## Bugs
+
+Purchase button isn't functioning 
 
 
 

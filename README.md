@@ -1,6 +1,25 @@
-# Getting Started with Create React App
+# [Prime Picks](https://prime-picks-frontend.herokuapp.com/) 
+<hr />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Prime picks is the ultimate user buyer experience 
+
+## Deployment
+
+You can https://prime-picks-frontend.herokuapp.com/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Available Scripts
 

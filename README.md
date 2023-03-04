@@ -1,7 +1,7 @@
 # [Prime Picks](https://prime-picks-frontend.herokuapp.com/) 
 <hr />
 
-🛒 Prime picks is the ultimate seller/buyer experience, where anyone can signon and sell & buy a varienty of different items! 🛒
+Prime picks is the ultimate seller/buyer experience, where anyone can signon and sell & buy a varienty of different items! 🛒
 
 ## Inspiration: 
 

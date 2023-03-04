@@ -1,7 +1,7 @@
 # [Prime Picks](https://prime-picks-frontend.herokuapp.com/) 
 <hr />
 
-Prime picks is the ultimate seller/buyer experience, where anyone can signon and sell & buy a varienty of different items!
+🛒 Prime picks is the ultimate seller/buyer experience, where anyone can signon and sell & buy a varienty of different items! 🛒
 
 ## Inspiration: 
 
@@ -57,8 +57,8 @@ Change all fetch routes in the src component folder to http://localhost/3000
 ## Bugs
 <hr />
 
-Purchase button isn't functionings
-User display is currrent function for user_id however future updates will allow the selected USERNAME to be displayed. 
+* Purchase button isn't functionings
+* User display is currrent function for user_id however future updates will allow the selected USERNAME to be displayed. 
 
 
 

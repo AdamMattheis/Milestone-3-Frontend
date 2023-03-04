@@ -14,7 +14,7 @@ const Items = () => {
 
     useEffect(()=> {
         const fetchData = async () => {
-            const response = await fetch(`http://localhost:3000/items`)
+            const response = await fetch(`https://prime-picks.herokuapp.com/items`)
             const resData = await response.json()
             setItems(resData)
         }

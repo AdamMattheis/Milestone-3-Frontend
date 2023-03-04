@@ -16,7 +16,7 @@ function NewItemForm() {
 
 	useEffect(()=> {
         const fetchData = async () => {
-            const response = await fetch(`http://localhost:3000/user`)
+            const response = await fetch(`https://prime-picks.herokuapp.com/user`)
             const resData = await response.json()
             setUser(resData)
         }

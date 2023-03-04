@@ -13,7 +13,7 @@ function NewUserForm() {
 	async function handleSubmit(e) {
 		e.preventDefault()
 
-		await fetch(`http://localhost:3000/user`, {
+		await fetch(`https://prime-picks.herokuapp.com/user`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

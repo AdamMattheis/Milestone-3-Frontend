@@ -30,7 +30,7 @@ function ItemDetails() {
 	}
 
 	async function deleteItem() {
-		await fetch(`http://localhost:3000/items/${id}`, {
+		await fetch(`https://prime-picks.herokuapp.com/items/${id}`, {
 			method: 'DELETE'
 		})
 		navigate('/items')

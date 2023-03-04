@@ -41,10 +41,10 @@ function EditItemForm() {
 	}
 
 	return (
-		<main className="moviesPage" >
+		<main className="iPage2" >
 			<h1>Edit Item</h1>
 			<form onSubmit={handleSubmit}>
-				<div className="moviesPage2">
+				<div className="iPage22">
 					<label htmlFor="name">Item Name</label>
 					<input
 						required
@@ -55,7 +55,7 @@ function EditItemForm() {
 						name="name"
 					/>
 				</div>
-				<div className="moviesPage2">
+				<div className="iPage22">
 					<label htmlFor="price">Price</label>
 					<input
 						required
@@ -66,7 +66,7 @@ function EditItemForm() {
 						name="price"
 					/>
 				</div>
-				<div className="moviesPage2">
+				<div className="iPage22">
 					<label htmlFor="description">Description</label>
 					<input
 						value={item.description}
@@ -76,7 +76,7 @@ function EditItemForm() {
 						name="description"
 					/>
 				</div>
-				<div className="moviesPage2">
+				<div className="iPage22">
 					<label htmlFor="picture">Picture</label>
 					<input
 						value={item.picture}

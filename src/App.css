@@ -4,33 +4,7 @@
 }
 
 body {
-  background-color: #ff0000;
-  transition: background-color 30s;
-  animation: change-color 30s infinite;
-}
-
-@keyframes change-color {
-  0% {
-      background-color: #ff0000;
-  }
-  16.66% {
-      background-color: #ff7f00;
-  }
-  33.33% {
-      background-color: #ffff00;
-  }
-  50% {
-      background-color: #00ff00;
-  }
-  66.66% {
-      background-color: #0000ff;
-  }
-  83.33% {
-      background-color: #4b0082;
-  }
-  100% {
-      background-color: #ff0000;
-  }
+  background-color: white;
 }
 
 
@@ -64,9 +38,6 @@ a:visited {
 
 .background-buttons{
   padding-top: 100px;
-  background-color: #ff0000;
-  transition: background-color 30s;
-  animation: change-color 30s infinite;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -94,7 +65,7 @@ hr {
   margin: 40px 200px 5px 200px;
 }
 
-.moviesPage{
+.iPage{
   display: block;
   justify-items: center;
   text-align: center;
@@ -103,12 +74,10 @@ hr {
   font-size: 3vw;
   padding: 10px;
   color: black;
-  background-color: #ff0000;
-  transition: background-color 30s;
-  animation: change-color 30s infinite;
+  background-color: white;
 }
 
-.moviesPage2{
+.iPage2{
   display: block;
   justify-items: center;
   text-align: center;
@@ -117,12 +86,11 @@ hr {
   font-size: 1vw;
   padding: 10px;
   color: black;
-  background-color: #ff0000;
-  transition: background-color 30s;
-  animation: change-color 30s infinite;
+  background-color: white;
+
 }
 
-.moviesPage3{
+.iPage3{
   display: block;
   justify-items: center;
   text-align: center;
@@ -131,12 +99,10 @@ hr {
   font-size: 2vw;
   padding: 5px;
   color: black;
-  background-color: #ff0000;
-  transition: background-color 30s;
-  animation: change-color 30s infinite;
+  background-color: white;
 }
 
-.moviesPage4{
+.iPage4{
   display: block;
   justify-items: center;
   text-align: center;
@@ -145,12 +111,14 @@ hr {
   font-size: 1.5vw;
   padding: 10px;
   color: black;
-  background-color: #ff0000;
-  transition: background-color 30s;
-  animation: change-color 30s infinite;
+  background-color: white;
+
 }
 
 .itemsPage{
+  border: 10px;
+  border-radius: 20px;
+  border-color: black;
   display: flex;
   font-family: 'Allerta Stencil';
   flex-flow: row wrap;
@@ -159,9 +127,6 @@ hr {
   justify-content: space-around;
   padding: 10px;
   color: black;
-  background-color: #ff0000;
-  transition: background-color 30s;
-  animation: change-color 30s infinite;
 }
 
 .flex-container {
@@ -169,6 +134,10 @@ hr {
 }
 
 .flex{
+  border: 20px;
+  border-radius: 20px;
+  border-color: black;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   justify-items: center;
   margin: 50px;
@@ -194,6 +163,7 @@ hr {
 }
 
 .detailsButton{
+  text-align: center;
   background: none;
   border: none;
   font-size: 30px;

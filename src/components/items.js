@@ -1,12 +1,16 @@
 import React from 'react';
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 import { useNavigate } from "react-router";
+import Paypal from "./purchase";
+
 
 const Items = () => {
 
     const navigate = useNavigate()
     
     const [items, setItems] = useState([])
+
+    const [checkout, setCheckOut] = useState(false)
 
     useEffect(()=> {
         const fetchData = async () => {
@@ -21,7 +25,10 @@ const Items = () => {
 		return (
 			<div className='flex' key={item.id}>
                 
-				<img src={item.picture} width="200" height="200"/>
+                <div className='itemsPage'>
+                    <img src={item.picture} width="200" height="200"/>
+                </div>
+				
 
 				<h2>
                     <div className='detailsButton'>
@@ -31,21 +38,29 @@ const Items = () => {
                     </div>
 				</h2>
                 
-				<p className='text-center'>
-					Price: {item.price}
+				<p className='itemsPage'>
+					<b>$ {item.price}</b>
 				</p>
                 <p className='text-center'>
-				    Description: {item.description}
+				   <b> Description: </b> {item.description}
 				</p>
 				<p className='text-center'>
-				    Seller: {item.user}
+				    <b>Seller: </b>{item.user}
                     
 				</p>
-                <a href='/user/purchase' >
-                    <button className='NewMovieButton'>
-                        Purchase
-                    </button>
-                </a>
+                <div className='itemsPage'>
+						{checkout ? (
+							<Paypal />
+						) : (
+						<button className="NewMovieButton"
+							onClick={() => {
+								setCheckOut(true);
+							}}
+							>
+							Purchase
+						</button>
+						)}
+				</div>
 			</div>
 		)
 	})
@@ -69,20 +84,13 @@ const Items = () => {
                     </button>
                 </a>
             </div>
-            <div>
-                <a href='/user/account' >
-                    <button className='NewMovieButton'>
-                        Account
-                    </button>
-                </a>
-            </div>
-            <div>
+            {/* <div>
                 <a href='/user/login' >
                     <button className='NewMovieButton'>
                         Login
                     </button>
                 </a>
-            </div> 
+            </div>  */}
             <div>
                 <a href='/user/signup' >
                     <button className='NewMovieButton'>

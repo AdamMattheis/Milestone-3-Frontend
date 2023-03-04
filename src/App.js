@@ -6,7 +6,6 @@ import NewItemForm from './components/newItemForm';
 import ItemDetails from './components/itemDetails';
 import EditItemForm from './components/editItemForm';
 import NewUserForm from './components/signup';
-// import Account from './components/account';
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
           <Route path="/items/:id" element={<ItemDetails />} />
           <Route path="/items/:id/edit" element={<EditItemForm />} />
           <Route path="/user/signup" element={<NewUserForm />} />
-          {/* <Route path="/user/account" element={<Account />} /> */}
         </Routes>
       </BrowserRouter>
   );

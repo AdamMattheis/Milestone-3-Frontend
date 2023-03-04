@@ -49,9 +49,9 @@ function NewItemForm() {
                 </a>
             </div>
             <hr />
-			<h1 className="moviesPage">Add a New Item</h1>
+			<h1 className="iPage">Add a New Item</h1>
 			<form onSubmit={handleSubmit}>
-				<div className="moviesPage2">
+				<div className="iPage2">
 					<label htmlFor="name">Item Name</label>
 					<input
                         required
@@ -62,7 +62,7 @@ function NewItemForm() {
 						name="name"
 					/>
 				</div>
-				<div className="moviesPage2">
+				<div className="iPage2">
 					<label htmlFor="price">Price</label>
 					<input
 						value={item.price}
@@ -72,7 +72,7 @@ function NewItemForm() {
 						name="price"
 					/>
 				</div>
-				<div className="moviesPage2">
+				<div className="iPage2">
 					<label htmlFor="picture">Picture</label>
 					<input
 						value={item.picture}
@@ -82,7 +82,7 @@ function NewItemForm() {
 						name="picture"
 					/>
 				</div>
-				<div className="moviesPage2">
+				<div className="iPage2">
 					<label htmlFor="description">Description</label>
 					<input
 						value={item.description}
@@ -90,7 +90,7 @@ function NewItemForm() {
 						className="form-control"
 						id="description" name="description" />
 				</div>
-                <div className="moviesPage2">
+                <div className="iPage2">
 					<label htmlFor="user">Seller</label>
 						<select 
 							onChange={e => setItem({ ...item, user: e.target.value})}>
@@ -105,7 +105,7 @@ function NewItemForm() {
 							})}
 						</select>
 				</div>
-                <div className="moviesPage2">
+                <div className="iPage2">
                     <input className="NewMovieButton" type="submit" value="Add Item" />
                 </div>
 			</form>

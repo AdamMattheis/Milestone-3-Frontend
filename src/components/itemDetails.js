@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router";
+import Paypal from "./purchase";
 
 function ItemDetails() {
 
@@ -8,6 +9,8 @@ function ItemDetails() {
 	const navigate = useNavigate()
 
 	const [item, setItem] = useState(null)
+
+	const [checkout, setCheckOut] = useState(false)
 
 	useEffect(() => {
 		const fetchData = async () => {
@@ -34,9 +37,9 @@ function ItemDetails() {
 	}
 
 	return (
-		<main className="moviesPage">
+		<main className="iPage">
 			<div className="text-center" >
-				<div className="moviesPage">
+				<div className="iPage">
                     <h1>
                         <img src={item.picture} width="200" height="200"/>
                     </h1>
@@ -44,7 +47,7 @@ function ItemDetails() {
 					    {item.name}
 					</h1>
 				</div>
-				<div className="moviesPage3" >
+				<div className="iPage3" >
 					<p>
 						Price:   {item.price}
 					</p>
@@ -55,6 +58,22 @@ function ItemDetails() {
 					</p>
 					<br />
                         Seller:   {item.user}
+					<br />
+					<br />
+					<div>
+						{checkout ? (
+							<Paypal />
+						) : (
+						<button className="NewMovieButton"
+							onClick={() => {
+								setCheckOut(true);
+							}}
+							>
+							Purchase
+						</button>
+						)}
+					</div>
+					<br />
 					<br />
 					<button className="NewMovieButton" onClick={editItem}>
 						Edit

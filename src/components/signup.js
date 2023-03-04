@@ -34,9 +34,9 @@ function NewUserForm() {
                 </a>
             </div>
             <hr />
-			<h1 className="moviesPage">SIGN UP</h1>
+			<h1 className="iPage">SIGN UP</h1>
 			<form onSubmit={handleSubmit}>
-				<div className="moviesPage2">
+				<div className="iPage2">
 					<label htmlFor="username">Username</label>
 					<input
                         required
@@ -47,7 +47,7 @@ function NewUserForm() {
 						name="username"
 					/>
 				</div>
-				<div className="moviesPage2">
+				<div className="iPage2">
 					<label htmlFor="password">Password</label>
 					<input
 						value={user.password}
@@ -57,7 +57,7 @@ function NewUserForm() {
 						name="password"
 					/>
 				</div>
-                <div className="moviesPage2">
+                <div className="iPage2">
                     <input className="NewMovieButton" type="submit" value="SIGN UP" />
                 </div>
 			</form>

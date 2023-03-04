@@ -26,7 +26,7 @@ function EditItemForm() {
 	async function handleSubmit(e) {
 		e.preventDefault()
 
-		await fetch(`http://localhost:3000/items/${id}`, {
+		await fetch(`https://prime-picks.herokuapp.com/${id}`, {
 			method: 'PUT',
 			headers: {
 				'Content-Type': 'application/json'

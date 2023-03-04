@@ -1,9 +1,12 @@
 # [Prime Picks](https://prime-picks-frontend.herokuapp.com/) 
 <hr />
 
-Prime picks is the ultimate user buyer experience.
+Prime picks is the ultimate seller/buyer experience, where anyone can signon and sell up buy a varienty of different items  
 
 ## Inspiration: 
+
+Our site was highly inspirated by Preston, Adam, Lucien, and Sam's love of online shopping. Also inspiration was pulled from Big online marketplaces like 
+[Facebook Marketplace](https://www.facebook.com/marketplace) and [Amazon](https://www.amazon.com/)
 
 ## Deployment
 <hr />

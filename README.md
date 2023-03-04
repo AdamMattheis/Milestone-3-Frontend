@@ -1,12 +1,34 @@
 # [Prime Picks](https://prime-picks-frontend.herokuapp.com/) 
 <hr />
 
-Prime picks is the ultimate user buyer experience 
+Prime picks is the ultimate user buyer experience.
 
 ## Deployment
 
-You can https://prime-picks-frontend.herokuapp.com/
+You can go to https://prime-picks-frontend.herokuapp.com/ to see out deployed product. 
 
+
+
+### Want To Fork 
+
+##### Backend
+git clone --> https://github.com/PrestonFr21/MSP3-Final
+cd MSP3-Final 
+
+##### Frontend 
+git clone --> https://github.com/AdamMattheis/Milestone-3-Frontend
+cd Milestone-3-Frontend
+
+
+
+
+
+
+Inspiration: 
+Demo
+TECHNOlogies used
+Future updates
+Bugs
 
 
 

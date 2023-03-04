@@ -28,24 +28,29 @@ Change all fetch routes in the src component folder to http://localhost/3000
 
 ## Technologies Used
 <hr />
- • Backend- Node.js, Express
- • Frontend- React
- • Database- MongoDB
- • Deployment- Heroku
+
+* Backend 
+  - Node.js, Express
+* Frontend
+  - React
+* Database
+  - MongoDB
+* Deployment
+  - Heroku
 
 ## Future updates
 <hr />
 
 * User name display
 * Paypal authentication. 
- - Feature is operational but due to time constraints it was not implemented into deployed site. 
+  - Feature is operational but due to time constraints it was not implemented into deployed site. 
 * Google LogIn
 * Ranking (most popular items on the 1st page) and Rating system. 
 * VOC
- - Comment section / Review board 
+  - Comment section / Review board 
 * Video support 
- - For seller to advertise product 
- - For buyers to post reviews 
+  - For seller to advertise product 
+  - For buyers to post reviews 
 
 ## Bugs
 

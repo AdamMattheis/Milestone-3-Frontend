@@ -3,13 +3,16 @@
 
 Prime picks is the ultimate user buyer experience.
 
+## Inspiration: 
+
 ## Deployment
+<hr />
 
 You can go to https://prime-picks-frontend.herokuapp.com/ to see out deployed product. 
 
 
-
-### Want To Fork 
+### Want To Try it Out Locally 
+<hr />
 
 ##### Backend
 git clone --> https://github.com/PrestonFr21/MSP3-Final
@@ -19,16 +22,19 @@ cd MSP3-Final
 git clone --> https://github.com/AdamMattheis/Milestone-3-Frontend
 cd Milestone-3-Frontend
 
+Change all fetch routes in the src component folder to http://localhost/3000
 
 
 
+## Technologies Used
+<hr />
+ • Backend- Node.js, Express
+ • Frontend- React
+ • Database- MongoDB
+ • Deployment- Heroku
 
-
-Inspiration: 
-Demo
-TECHNOlogies used
-Future updates
-Bugs
+## Future updates
+## Bugs
 
 
 
